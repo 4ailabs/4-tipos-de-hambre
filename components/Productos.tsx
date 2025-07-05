@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const productos = [
   {
-    image: '/producto1.jpg',
+    image: 'https://images.squarespace-cdn.com/content/v1/63937c55c3c2e84a13a3ede9/63243940-6a4f-41be-9699-59f2773db855/2.png?format=1000w',
     title: 'Vitamina D3',
     beneficios: [
       'Mejora tu estado de ánimo',
@@ -13,7 +13,7 @@ const productos = [
     precio: '',
   },
   {
-    image: '/producto2.jpg',
+    image: 'https://images.squarespace-cdn.com/content/v1/63937c55c3c2e84a13a3ede9/d2990412-83c2-4452-8299-167d103d941d/3.png?format=1000w',
     title: 'Resverasor (Várices y piernas pesadas)',
     beneficios: [
       'Alivia la sensación de pesadez',
@@ -23,7 +23,7 @@ const productos = [
     precio: '$630.00',
   },
   {
-    image: '/producto3.jpg',
+    image: 'https://images.squarespace-cdn.com/content/v1/63937c55c3c2e84a13a3ede9/9da07722-c176-4742-bdb7-e0d7fe9552de/4.png?format=1000w',
     title: 'Nervit (Sueño)',
     beneficios: [
       'Conciliar el sueño',
@@ -33,7 +33,7 @@ const productos = [
     precio: '',
   },
   {
-    image: '/producto4.jpg',
+    image: 'https://images.squarespace-cdn.com/content/v1/63937c55c3c2e84a13a3ede9/ad059018-9224-4dd3-8c99-8bb98caad89b/5.png?format=1000w',
     title: 'Vitamina E (Sorivid)',
     beneficios: [
       'Suplemento antioxidante',
@@ -44,7 +44,7 @@ const productos = [
     precio: '',
   },
   {
-    image: '/producto5.jpg',
+    image: 'https://images.squarespace-cdn.com/content/v1/63937c55c3c2e84a13a3ede9/6faa3af0-7e42-44d6-939d-87731df565cc/6.png?format=1000w',
     title: 'Lisina (Lis-AM)',
     beneficios: [
       'Refuerza tu sistema inmunológico',
@@ -54,18 +54,7 @@ const productos = [
     precio: 'Lisam 60 caps - $190.00 | Lisam 200 caps - $475.00',
   },
   {
-    image: '/producto6.jpg',
-    title: 'Oligosor con Zinc',
-    beneficios: [
-      'Fortalece tu sistema inmunológico',
-      'Ayuda a la cicatrización de heridas',
-      'Apoya la salud de la piel, cabello y uñas',
-      'Con dosificador integrado para mayor comodidad',
-    ],
-    precio: '',
-  },
-  {
-    image: '/producto7.jpg',
+    image: 'https://images.squarespace-cdn.com/content/v1/63937c55c3c2e84a13a3ede9/4f2ee6da-51df-4f0e-8f8f-9cbc8f084b67/7.png?format=1000w',
     title: 'Mincartil',
     beneficios: [
       'Rico en colágeno, calcio, magnesio, vitamina C y D',
@@ -76,7 +65,18 @@ const productos = [
     precio: '',
   },
   {
-    image: '/producto8.jpg',
+    image: 'https://images.squarespace-cdn.com/content/v1/63937c55c3c2e84a13a3ede9/5655131e-4f0c-4655-ac6c-a4e688f0c98d/8.png?format=1000w',
+    title: 'Oligosor con Zinc',
+    beneficios: [
+      'Fortalece tu sistema inmunológico',
+      'Ayuda a la cicatrización de heridas',
+      'Apoya la salud de la piel, cabello y uñas',
+      'Con dosificador integrado para mayor comodidad',
+    ],
+    precio: '',
+  },
+  {
+    image: 'https://images.squarespace-cdn.com/content/v1/63937c55c3c2e84a13a3ede9/3411206c-b480-4bf5-9606-610f783e29dd/9.png?format=1000w',
     title: 'Diatonato 5.2',
     beneficios: [
       'Regula el metabolismo desde la raíz',
