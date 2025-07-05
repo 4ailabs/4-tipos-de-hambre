@@ -2,7 +2,7 @@ import React from 'react';
 
 const ads = [
   {
-    image: '/publicidad1.jpg',
+    image: 'https://images.squarespace-cdn.com/content/v1/63937c55c3c2e84a13a3ede9/3a4bd77d-b855-4da2-9c45-ef0882fa5241/1.png?format=1000w',
     alt: 'Acupuntura Facial y Estética',
     title: '¡Luce radiante en tu graduación y eventos especiales!',
     description: 'Este mes de vacaciones, regálate un cambio visible y natural con Acupuntura Facial y Estética',
@@ -12,7 +12,7 @@ const ads = [
     address: 'Acapulco 36, Interior 104, Roma Nte., Cuauhtémoc',
   },
   {
-    image: '/publicidad2.jpg',
+    image: 'https://images.squarespace-cdn.com/content/v1/63937c55c3c2e84a13a3ede9/3b1e5b14-4e99-430a-a4ee-67a8f0eee977/2.png?format=1000w',
     alt: 'Protocolo Bio Regeneración Facial',
     title: 'Protocolo Bio Regeneración Facial',
     description: 'El reseteo profundo que tu piel necesita.',

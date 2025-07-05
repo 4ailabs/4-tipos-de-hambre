@@ -129,7 +129,7 @@ const Servicios: React.FC = () => {
         {servicios.map((servicio, idx) => (
           <div key={idx} className="bg-white dark:bg-stone-900 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 p-6 flex flex-col items-center group">
             {iconMap[servicio.title]}
-            <img src={servicio.image} alt={servicio.title} className="w-full h-48 object-cover rounded mb-4 group-hover:scale-105 transition-transform duration-300" />
+            {/* <img src={servicio.image} alt={servicio.title} className="w-full h-48 object-cover rounded mb-4 group-hover:scale-105 transition-transform duration-300" /> */}
             <h3 className="text-xl font-bold text-teal-800 dark:text-teal-200 mb-2 text-center transition-colors duration-300">{servicio.title}</h3>
             <p className="text-stone-700 dark:text-stone-200 text-center mb-2 transition-colors duration-300">{servicio.description}</p>
             <div className="text-sm text-stone-600 dark:text-stone-300 mb-1 transition-colors duration-300">
