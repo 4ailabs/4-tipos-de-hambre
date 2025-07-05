@@ -1,0 +1,5 @@
+{
+  "name": "Los 4 Tipos de Hambre",
+  "description": "An interactive web application to help users understand the four types of hunger: Cellular, Emotional, Symbolic, and Archaic. It features a quiz to identify one's dominant hunger type and provides detailed information and interactive tools for each.",
+  "requestFramePermissions": []
+}
