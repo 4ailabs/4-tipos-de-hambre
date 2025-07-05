@@ -65,7 +65,7 @@ const Publicidad: React.FC = () => {
         <div>📞 {contacto.phone}</div>
         <div>📍 {contacto.address}</div>
       </div>
-      <div className="mb-8 flex justify-center animate-fade-in-slow">
+      <div className="mb-8 flex flex-col items-center gap-4 animate-fade-in-slow">
         <a
           href="https://wa.me/+525579076626"
           target="_blank"
@@ -74,6 +74,10 @@ const Publicidad: React.FC = () => {
         >
           Haz tu cita
         </a>
+        <div className="flex gap-4 mt-2">
+          <a href="/servicios" className="inline-block bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-6 rounded-lg transition-colors shadow">Ver Servicios</a>
+          <a href="/productos" className="inline-block bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 px-6 rounded-lg transition-colors shadow">Ver Productos</a>
+        </div>
       </div>
       <style>{`
         .animate-fade-in { animation: fadeIn 0.7s ease-in; }
