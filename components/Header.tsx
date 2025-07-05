@@ -29,9 +29,13 @@ const Header: React.FC = () => {
     const handleMobileNavChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
         const targetId = e.target.value;
         if (targetId) {
-            const element = document.querySelector(targetId);
-            if (element) {
-                element.scrollIntoView({ behavior: 'smooth' });
+            if (targetId.startsWith('/')) {
+                window.location.href = targetId;
+            } else {
+                const element = document.querySelector(targetId);
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                }
             }
         }
     };
