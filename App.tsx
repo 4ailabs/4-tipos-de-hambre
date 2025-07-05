@@ -15,10 +15,10 @@ const App: React.FC = () => {
         <>
             <Header />
             <LiveStreamBanner />
-            <main className="container mx-auto px-2 sm:px-4 md:px-6 lg:px-8 py-8 sm:py-12 transition-colors duration-300 dark:bg-stone-950 min-h-screen">
+            <main className="container mx-auto px-2 sm:px-4 md:px-6 lg:px-8 py-8 sm:py-12 transition-colors duration-300 min-h-screen">
                 <section className="text-center mb-12 animate-fade-in">
-                    <h2 className="text-3xl sm:text-4xl font-bold text-orange-900 dark:text-orange-200 mb-4 transition-colors duration-300">Descubre lo que tu cuerpo realmente te pide</h2>
-                    <p className="max-w-3xl mx-auto text-lg sm:text-xl text-stone-700 dark:text-stone-200 transition-colors duration-300">
+                    <h2 className="text-3xl sm:text-4xl font-bold text-orange-900 mb-4 transition-colors duration-300">Descubre lo que tu cuerpo realmente te pide</h2>
+                    <p className="max-w-3xl mx-auto text-lg sm:text-xl text-stone-700 transition-colors duration-300">
                         El "hambre" es un lenguaje complejo. Responde este breve test para identificar tu tipo de hambre dominante y empezar a decodificar tus señales internas.
                     </p>
                 </section>

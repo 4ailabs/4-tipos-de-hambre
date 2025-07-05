@@ -31,13 +31,13 @@ const contacto = {
 const Publicidad: React.FC = () => {
   return (
     <>
-      <section className="my-12 transition-colors duration-300 dark:bg-stone-950 animate-fade-in">
-        <h3 className="text-2xl sm:text-3xl font-bold text-center mb-6 text-orange-900 dark:text-orange-200 transition-colors duration-300">Promociones Especiales</h3>
+              <section className="my-12 transition-colors duration-300 animate-fade-in">
+            <h3 className="text-2xl sm:text-3xl font-bold text-center mb-6 text-orange-900 transition-colors duration-300">Promociones Especiales</h3>
         <div className="flex flex-col md:flex-row gap-8 justify-center items-stretch animate-fade-in-slow">
           {ads.map((ad, idx) => (
             <div
               key={idx}
-              className="bg-white dark:bg-stone-900 rounded-xl shadow-lg hover:shadow-2xl overflow-hidden flex-1 max-w-md mx-auto md:mx-0 transition-shadow duration-300 group"
+                              className="bg-white rounded-xl shadow-lg hover:shadow-2xl overflow-hidden flex-1 max-w-md mx-auto md:mx-0 transition-shadow duration-300 group"
             >
               <img
                 src={ad.image}
@@ -45,22 +45,22 @@ const Publicidad: React.FC = () => {
                 className="w-full h-56 object-cover object-center group-hover:scale-105 transition-transform duration-300"
               />
               <div className="p-6 flex flex-col gap-2">
-                <h4 className="text-xl font-bold text-orange-900 dark:text-orange-200 mb-2 transition-colors duration-300">{ad.title}</h4>
-                <p className="text-stone-700 dark:text-stone-200 mb-1 transition-colors duration-300">{ad.description}</p>
+                <h4 className="text-xl font-bold text-orange-900 mb-2 transition-colors duration-300">{ad.title}</h4>
+                <p className="text-stone-700 mb-1 transition-colors duration-300">{ad.description}</p>
                 {ad.discount && (
-                  <div className="text-pink-700 dark:text-pink-300 font-semibold mb-1 transition-colors duration-300">{ad.discount}</div>
+                  <div className="text-pink-700 font-semibold mb-1 transition-colors duration-300">{ad.discount}</div>
                 )}
-                <p className="text-stone-700 dark:text-stone-200 mb-1 transition-colors duration-300">{ad.details}</p>
+                <p className="text-stone-700 mb-1 transition-colors duration-300">{ad.details}</p>
                 {ad.price && (
-                  <div className="text-lg font-bold text-red-600 dark:text-red-400 mb-1 transition-colors duration-300">{ad.price}</div>
+                  <div className="text-lg font-bold text-red-600 mb-1 transition-colors duration-300">{ad.price}</div>
                 )}
               </div>
             </div>
           ))}
         </div>
       </section>
-      <div className="my-8 border-t border-dashed border-orange-300 dark:border-orange-700 w-full max-w-4xl mx-auto"></div>
-      <div className="text-center text-stone-600 dark:text-stone-300 text-sm mb-4">
+      <div className="my-8 border-t border-dashed border-orange-300 w-full max-w-4xl mx-auto"></div>
+      <div className="text-center text-stone-600 text-sm mb-4">
         <div className="font-semibold text-base mb-1">Contacto</div>
         <div>📞 {contacto.phone}</div>
         <div>📍 {contacto.address}</div>

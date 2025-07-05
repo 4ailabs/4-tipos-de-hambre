@@ -94,19 +94,19 @@ const contacto = {
 
 const Productos: React.FC = () => {
   return (
-    <section className="container mx-auto px-2 sm:px-4 md:px-6 lg:px-8 py-8 sm:py-12 min-h-screen transition-colors duration-300 dark:bg-stone-950">
-      <h2 className="text-3xl sm:text-4xl font-bold text-center text-yellow-700 dark:text-yellow-300 mb-8 transition-colors duration-300 animate-fade-in">Productos y Suplementos</h2>
+            <section className="container mx-auto px-2 sm:px-4 md:px-6 lg:px-8 py-8 sm:py-12 min-h-screen transition-colors duration-300">
+            <h2 className="text-3xl sm:text-4xl font-bold text-center text-yellow-700 mb-8 transition-colors duration-300 animate-fade-in">Productos y Suplementos</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 animate-fade-in-slow">
         {productos.map((producto, idx) => (
-          <div key={idx} className="bg-white dark:bg-stone-900 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 p-6 flex flex-col items-center group">
+                      <div key={idx} className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 p-6 flex flex-col items-center group">
             <img src={producto.image} alt={producto.title} className="w-full h-48 object-cover rounded mb-4 group-hover:scale-105 transition-transform duration-300" />
-            <h3 className="text-xl font-bold text-yellow-700 dark:text-yellow-300 mb-2 text-center transition-colors duration-300">{producto.title}</h3>
-            <ul className="text-stone-700 dark:text-stone-200 text-left mb-2 list-disc list-inside transition-colors duration-300">
+                          <h3 className="text-xl font-bold text-yellow-700 mb-2 text-center transition-colors duration-300">{producto.title}</h3>
+              <ul className="text-stone-700 text-left mb-2 list-disc list-inside transition-colors duration-300">
               {producto.beneficios.map((b, i) => (
                 <li key={i}>{b}</li>
               ))}
             </ul>
-            {producto.precio && <div className="text-lg font-bold text-green-700 dark:text-green-400 mb-1 transition-colors duration-300">{producto.precio}</div>}
+                            {producto.precio && <div className="text-lg font-bold text-green-700 mb-1 transition-colors duration-300">{producto.precio}</div>}
           </div>
         ))}
       </div>

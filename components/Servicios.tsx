@@ -105,39 +105,39 @@ const servicios = [
 ];
 
 const iconMap: Record<string, React.ReactNode> = {
-  'Consulta médica presencial y online': <Stethoscope className="w-8 h-8 text-teal-600 dark:text-teal-300 mb-2" />,
-  'Terapia de Biomagnetismo': <Magnet className="w-8 h-8 text-pink-600 dark:text-pink-300 mb-2" />,
-  'Consulta médica + terapia de biomagnetismo': <Magnet className="w-8 h-8 text-pink-600 dark:text-pink-300 mb-2" />,
-  'Terapia Sistémica con Playmobil': <Users className="w-8 h-8 text-blue-600 dark:text-blue-300 mb-2" />,
-  'Sesión de Lego Serious Play (LSP)': <Blocks className="w-8 h-8 text-yellow-600 dark:text-yellow-300 mb-2" />,
-  'Terapia Sand Play (Caja de Arena)': <Mountain className="w-8 h-8 text-yellow-700 dark:text-yellow-400 mb-2" />,
-  'Terapia de conflictología biológica y reprocesamiento': <Brain className="w-8 h-8 text-purple-600 dark:text-purple-300 mb-2" />,
+  'Consulta médica presencial y online': <Stethoscope className="w-8 h-8 text-teal-600 mb-2" />,
+  'Terapia de Biomagnetismo': <Magnet className="w-8 h-8 text-pink-600 mb-2" />,
+  'Consulta médica + terapia de biomagnetismo': <Magnet className="w-8 h-8 text-pink-600 mb-2" />,
+  'Terapia Sistémica con Playmobil': <Users className="w-8 h-8 text-blue-600 mb-2" />,
+  'Sesión de Lego Serious Play (LSP)': <Blocks className="w-8 h-8 text-yellow-600 mb-2" />,
+  'Terapia Sand Play (Caja de Arena)': <Mountain className="w-8 h-8 text-yellow-700 mb-2" />,
+  'Terapia de conflictología biológica y reprocesamiento': <Brain className="w-8 h-8 text-purple-600 mb-2" />,
   'Plan de Alimentación': undefined,
-  'Control de peso con auriculoterapia': <Ear className="w-8 h-8 text-orange-600 dark:text-orange-300 mb-2" />,
-  'Consulta Online de Productos Nutricionales': <Syringe className="w-8 h-8 text-green-600 dark:text-green-300 mb-2" />,
-  'Consulta de Flores de Bach': <Flower2 className="w-8 h-8 text-pink-600 dark:text-pink-300 mb-2" />,
-  'Terapia con cartas asociativas (OH)': <Contact2 className="w-8 h-8 text-orange-600 dark:text-orange-300 mb-2" />,
-  'Terapia de metaposiciones (Neuro imaginative Gestalting)': <UserCog className="w-8 h-8 text-purple-600 dark:text-purple-300 mb-2" />,
-  'Neuroaprendizaje y brain gym en niños': <Baby className="w-8 h-8 text-blue-600 dark:text-blue-300 mb-2" />,
+  'Control de peso con auriculoterapia': <Ear className="w-8 h-8 text-orange-600 mb-2" />,
+  'Consulta Online de Productos Nutricionales': <Syringe className="w-8 h-8 text-green-600 mb-2" />,
+  'Consulta de Flores de Bach': <Flower2 className="w-8 h-8 text-pink-600 mb-2" />,
+  'Terapia con cartas asociativas (OH)': <Contact2 className="w-8 h-8 text-orange-600 mb-2" />,
+  'Terapia de metaposiciones (Neuro imaginative Gestalting)': <UserCog className="w-8 h-8 text-purple-600 mb-2" />,
+  'Neuroaprendizaje y brain gym en niños': <Baby className="w-8 h-8 text-blue-600 mb-2" />,
 };
 
 const Servicios: React.FC = () => {
   return (
-    <section className="container mx-auto px-2 sm:px-4 md:px-6 lg:px-8 py-8 sm:py-12 min-h-screen transition-colors duration-300 dark:bg-stone-950">
-      <h2 className="text-3xl sm:text-4xl font-bold text-center text-teal-800 dark:text-teal-200 mb-8 transition-colors duration-300 animate-fade-in">Servicios de la Clínica Centrobioenergetica</h2>
+            <section className="container mx-auto px-2 sm:px-4 md:px-6 lg:px-8 py-8 sm:py-12 min-h-screen transition-colors duration-300">
+            <h2 className="text-3xl sm:text-4xl font-bold text-center text-teal-800 mb-8 transition-colors duration-300 animate-fade-in">Servicios de la Clínica Centrobioenergetica</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 animate-fade-in-slow">
         {servicios.map((servicio, idx) => (
-          <div key={idx} className="bg-white dark:bg-stone-900 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 p-6 flex flex-col items-center group">
+                      <div key={idx} className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 p-6 flex flex-col items-center group">
             {iconMap[servicio.title]}
             {/* <img src={servicio.image} alt={servicio.title} className="w-full h-48 object-cover rounded mb-4 group-hover:scale-105 transition-transform duration-300" /> */}
-            <h3 className="text-xl font-bold text-teal-800 dark:text-teal-200 mb-2 text-center transition-colors duration-300">{servicio.title}</h3>
-            <p className="text-stone-700 dark:text-stone-200 text-center mb-2 transition-colors duration-300">{servicio.description}</p>
-            <div className="text-sm text-stone-600 dark:text-stone-300 mb-1 transition-colors duration-300">
+                          <h3 className="text-xl font-bold text-teal-800 mb-2 text-center transition-colors duration-300">{servicio.title}</h3>
+              <p className="text-stone-700 text-center mb-2 transition-colors duration-300">{servicio.description}</p>
+              <div className="text-sm text-stone-600 mb-1 transition-colors duration-300">
               {servicio.duracion && <span className="mr-2">⏱️ {servicio.duracion}</span>}
               {servicio.costo && <span>💲{servicio.costo}</span>}
             </div>
-            {servicio.incluye && <div className="text-xs text-green-700 dark:text-green-300 mb-1">Incluye: {servicio.incluye}</div>}
-            {servicio.nota && <div className="text-xs text-red-600 dark:text-red-400 mb-1">{servicio.nota}</div>}
+                          {servicio.incluye && <div className="text-xs text-green-700 mb-1">Incluye: {servicio.incluye}</div>}
+              {servicio.nota && <div className="text-xs text-red-600 mb-1">{servicio.nota}</div>}
           </div>
         ))}
       </div>
