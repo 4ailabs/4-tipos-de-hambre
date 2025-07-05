@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './components/Header';
+import LiveStreamBanner from './components/LiveStreamBanner';
 import Quiz from './components/Quiz';
 import SectionCellular from './components/SectionCellular';
 import SectionEmotional from './components/SectionEmotional';
@@ -13,6 +14,7 @@ const App: React.FC = () => {
     return (
         <>
             <Header />
+            <LiveStreamBanner />
             <main className="container mx-auto px-2 sm:px-4 md:px-6 lg:px-8 py-8 sm:py-12 transition-colors duration-300 dark:bg-stone-950 min-h-screen">
                 <section className="text-center mb-12 animate-fade-in">
                     <h2 className="text-3xl sm:text-4xl font-bold text-orange-900 dark:text-orange-200 mb-4 transition-colors duration-300">Descubre lo que tu cuerpo realmente te pide</h2>
