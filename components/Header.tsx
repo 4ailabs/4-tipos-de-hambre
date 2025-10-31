@@ -7,6 +7,7 @@ const navItems = [
     { href: '#simbolica', label: '🫂 Simbólica' },
     { href: '#arcaica', label: '🛡️ Arcaica' },
     { href: '#solucion', label: '🌱 Solución' },
+    { href: '/trascendencia', label: '🎬 Slides Trascendencia' },
     { href: '/servicios', label: '💼 Servicios Centrobioenergetica' },
     { href: '/productos', label: '🛒 Productos' },
 ];
@@ -18,6 +19,7 @@ const mobileNavItems = [
     { value: '#simbolica', label: 'Hambre Simbólica' },
     { value: '#arcaica', label: 'Hambre Arcaica' },
     { value: '#solucion', label: 'Solución Integrada' },
+    { value: '/trascendencia', label: 'Slides Trascendencia' },
     { value: '/servicios', label: 'Servicios Centrobioenergetica' },
     { value: '/productos', label: 'Productos' },
 ]
