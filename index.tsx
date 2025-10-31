@@ -4,6 +4,7 @@ import App from './App';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Servicios from './components/Servicios';
 import Productos from './components/Productos';
+import TranscendenceSlides from './components/TranscendenceSlides';
 
 const rootElement = document.getElementById('root');
 if (!rootElement) {
@@ -18,6 +19,7 @@ root.render(
         <Route path="/" element={<App />} />
         <Route path="/servicios" element={<Servicios />} />
         <Route path="/productos" element={<Productos />} />
+        <Route path="/trascendencia" element={<TranscendenceSlides />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
